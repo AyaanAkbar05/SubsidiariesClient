@@ -2,11 +2,12 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { environment } from '../../environments/environment.development';
 import { ParentCompanies } from './parent-companies';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-parent-companies',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './parent-companies.component.html',
   styleUrl: './parent-companies.component.css'
 })

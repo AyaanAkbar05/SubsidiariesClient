@@ -1,1 +1,21 @@
-<p>parent-companies works!</p>
+<h1>Parent Companies</h1>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Parent Company Id</th>
+        <th>Name</th>
+    </tr>
+</thead>
+<tbody>
+    @for (parentCompany of ParentCompanies; track $index) {
+        <tr>
+            <td>
+                <a [routerLink] = "['/parentCompaniesSubsidiaries',parentCompany.parentCompanyId]">{{parentCompany.parentCompanyId}}</a>
+            </td>
+            <td>
+                {{parentCompany.name}}
+            </td>
+        </tr>
+    }
+</tbody>
+</table>

@@ -1,5 +1,5 @@
 export interface ParentCompanies {
-        ParentComanyId: number;
-        Name: string;
+        parentCompanyId: number;
+        name: string;
     }
 
