@@ -5,6 +5,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import { Subject, takeUntil } from 'rxjs';
 import { AuthService } from '../auth/auth.service';
+
 @Component({
   selector: 'app-nav-bar',
   standalone: true,
@@ -36,4 +37,6 @@ export class NavBarComponent implements OnInit, OnDestroy {
   OnLogOut(): void {
     this.authService.logout();
     this.router.navigate(['/']);
-  }}
+
+  }
+}

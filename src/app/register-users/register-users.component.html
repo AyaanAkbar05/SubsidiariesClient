@@ -1,0 +1,22 @@
+<div class="container">
+    <h2>Register User/ Administrator</h2>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="userName">Username</label>
+        <input type="text" id="userName" formControlName="userName" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" formControlName="email" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" formControlName="password" class="form-control">
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" id="isAdministrator" formControlName="isAdministrator" class="form-check-input">
+        <label for="isAdministrator" class="form-check-label">Is Administrator</label>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Register</button>
+    </form>
+  </div>

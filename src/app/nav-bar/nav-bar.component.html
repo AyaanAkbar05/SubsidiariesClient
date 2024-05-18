@@ -5,11 +5,12 @@
       </button>
 
       <a mat-flat-button color="primary" [routerLink]="['/ParentCompanies']">Parent Companies</a>
+      <a mat-flat-button color="primary" [routerLink]="['/registerusers']">Register Users</a>
       <span class="separator"></span>
       @if(isLoggedIn){
         <a mat-flat-button color="primary" (click)="OnLogOut()">Logout</a>
         }
-        @else{
+      @else{
           <a mat-flat-button color="primary" [routerLink]="['/login']">Login</a>
         }
       
